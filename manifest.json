@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "HRel",
+	"version": "0.0.0",
+
+	"content_scripts": [
+		{
+			"matches": [
+				"http://xrel.to/*",
+				"https://xrel.to/*",
+				"http://www.xrel.to/*",
+				"https://www.xrel.to/*"
+			],
+			"js": [
+				"xrel-injector.js"
+			]
+		}
+	]
+}
