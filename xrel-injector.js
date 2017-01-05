@@ -9,7 +9,7 @@ function mutateReleases(container) {
 
 		const name = elem.innerText.trim();
 
-		elem.href = "http://dev.hrel.vprs.pw/search/" + name;
+		elem.href = "http://dev.hrel.vprs.pw/search/" + encodeURIComponent(name);
 		elem.target = "blank";
 	});
 }
