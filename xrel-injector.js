@@ -53,6 +53,9 @@ function mutateReleases() {
 	const elems = document.querySelectorAll(".release_title a.sub_link");
 	elems.forEach(mut);
 
+	const elemsP2p = document.querySelectorAll(".release_title_p2p a.sub_link");
+	elemsP2p.forEach(mut);
+
 	const elemsTips = document.querySelectorAll(".prototip a.sub_link");
 	elemsTips.forEach(mut);
 }
