@@ -1,4 +1,9 @@
 /**
+ * Base URL for the Search page
+ */
+const searchBaseURL = "http://hrel.cloud.vprs.pw/search?q="
+
+/**
  * Mutate the release links, so they'll redirect to the HRel search.
  */
 function mutateFavReleases(container) {
@@ -9,7 +14,7 @@ function mutateFavReleases(container) {
 
 		const name = elem.innerText.trim();
 
-		elem.href = "http://dev.hrel.vprs.pw/search/" + encodeURIComponent(name);
+		elem.href = searchBaseURL + encodeURIComponent(name);
 		elem.target = "blank";
 	});
 }
@@ -46,7 +51,7 @@ function mutateReleases() {
 	function mut(elem) {
 		const name = elem.querySelector("span").innerText.trim();
 
-		elem.href = "http://dev.hrel.vprs.pw/search/" + encodeURIComponent(name);
+		elem.href = searchBaseURL + encodeURIComponent(name);
 		elem.target = "blank";
 	}
 
