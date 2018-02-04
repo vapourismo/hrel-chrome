@@ -1,7 +1,7 @@
 /**
  * Base URL for the Search page
  */
-const searchBaseURL = "http://dev.hrel.vprs.pw/search?q="
+const searchBaseURL = "http://hrel.vprs.pw/search?q="
 
 /**
  * Mutate the release links, so they'll redirect to the HRel search.
